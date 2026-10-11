@@ -19,3 +19,9 @@ jobs:
 
       - name: Run script
         run: python make_video.py
+
+      - name: Upload Audio Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tweet-audio
+          path: tweet_audio.mp3
